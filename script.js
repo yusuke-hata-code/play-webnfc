@@ -36,7 +36,7 @@ readButton.addEventListener('click', async () => {
     });
 
     reader.addEventListener('reading', ({ message, serialNumber }) => {
-      console.log(`> Serial Number: ${serialNumber}`);
+      alert(`> Serial Number: ${serialNumber}`);
       console.log(message);
       const record = message.records[0];
       const { data, encoding, recordType } = record;
